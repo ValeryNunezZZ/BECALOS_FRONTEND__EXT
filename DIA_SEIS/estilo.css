@@ -8,7 +8,10 @@
 }
 
 .section-comment{
-    background: linear-gradient(90deg,pink, rgb(235, 102, 204), red);
+
+    min-height: 100vh;
+
+    background: linear-gradient(90deg,rgb(190, 44, 68), rgb(235, 102, 204), rgb(255, 44, 44));
     padding: 40px;
 }
 
@@ -22,6 +25,8 @@
     padding: 30px;
 
     border-radius: 10px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.296);
 }
 
 .form h2{
@@ -50,9 +55,12 @@
     font-size: 20px;
     color: white;
     background: linear-gradient(90deg,pink, rgb(235, 102, 204), red);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.296);
+
+    cursor: pointer;
 }
 
-textarea{
+textarea, .nombre_usuario{
     width: 100%;
     height: 200px;
     resize: none;
@@ -63,6 +71,11 @@ textarea{
     font-size: 17px;
 }
 
+.nombre_usuario{
+    width: auto;
+    height: auto;
+    padding: 10px 20px;
+}
 
 .todos_los_comentarios{
     margin-top: 30px;
@@ -71,23 +84,61 @@ textarea{
 
 .comentario-container{
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
 
     display: flex;
     flex-direction: column;
     gap: 20px;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.296);
 }
 
 .datos{
     display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left{
+    display: flex;
+    flex-direction: row;
     gap: 15px;
     align-items: center;
+}
+
+.right input{
+    padding: 10px 20px;
+    border-radius: 10px;
+    width:fit-content;
+
+    font-weight: 900;
+    font-size: 20px;
+    color: white;
+    background-color: rgba(255, 0, 0, 0.649);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.182);
 }
 
 .mini_texto{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.nombre{
+    font-weight: 900;
+    font-size: 20px;
+    color: rgb(45, 45, 45);
+}
+
+.fecha{
+    font-weight: 500;
+    font-size: 15px;
+    color: rgb(121, 121, 121);
+}
+
+.comentario{
+    color: rgb(27, 27, 27);
 }
