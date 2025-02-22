@@ -1,1 +1,3 @@
-DÍA UNO: Es una carpeta que contiene 3 archivos, entre ellos el de tipos-de-dato.js en el cual se hace uso de los tipos de datos primitivos de js, así como el us de la impresión en pantalla con console.log y el uso de typeof para visualizar el tipo de dato que es cierta variable.
+DIA_SEIS
+
+Link a la página hosteada: 
