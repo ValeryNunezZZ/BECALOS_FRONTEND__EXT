@@ -8,10 +8,15 @@
 }
 
 .section-comment{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 
     min-height: 100vh;
+    width: 100%;
 
     background: linear-gradient(90deg,rgb(190, 44, 68), rgb(235, 102, 204), rgb(255, 44, 44));
+    
     padding: 40px;
 }
 
@@ -19,6 +24,7 @@
 
     display: flex;
     flex-direction: column;
+
     gap: 15px;
 
     background-color: rgb(247, 247, 247);
@@ -27,6 +33,9 @@
     border-radius: 10px;
 
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.296);
+
+    width: 100%;
+    max-width: 600px;
 }
 
 .form h2{
