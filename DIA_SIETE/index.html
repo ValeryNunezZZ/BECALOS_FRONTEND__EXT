@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilo.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=file_copy" />
+    <title>Password Generator</title>
+</head>
+<body>
+    <section class="main_section_container">
+        <main class="main_section">
+            <div class="title_container">
+                <h1>Password Generator</h1>
+            </div>
+    
+            <div class="password_generated_container">
+                <input class="password_generated" value="holi">
+                <span class="material-symbols-outlined">file_copy</span>
+            </div>
+    
+            <div class="settings_container">
+                <div class="length_container">
+                    <div>
+                        <h2>Character Length</h2>
+                        <input type="number" value="10">
+                    </div>
+    
+                    <input type="range">
+                </div>
+    
+                <div class="check_list_container">
+                    <ul class="check_list">
+                        <li><span><input type="checkbox" class="check_list_item"></span><p>Include Uppercase Letters</p></li>
+    
+                        <li><span><input type="checkbox" class="check_list_item"></span><p>Include Lowercase Letters</p></li>
+    
+                        <li><span><input type="checkbox" class="check_list_item"></span><p>Include Numbers</p></li>
+                        
+                        <li><span><input type="checkbox" class="check_list_item"></span><p>Include Symbols</p></li>
+                    </ul>
+                </div>
+    
+                <div class="strength_container">
+                    <input type="text" value="STRENGTH">
+                    <div class="bars_container">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                </div>
+    
+                <div class="generate_container">
+                    <input type="button" class="generate" value="GENERATE">
+                </div>
+    
+            </div>
+        </main>
+    </section>
+
+    <script src="./doc.js"></script>
+</body>
+</html>
