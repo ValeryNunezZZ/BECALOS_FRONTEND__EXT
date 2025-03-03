@@ -147,6 +147,11 @@ function checar(){
         bars[1].style.backgroundColor = "rgb(0, 255, 55)";
         bars[2].style.backgroundColor = "rgb(0, 255, 55)";
         bars[3].style.backgroundColor = "rgb(0, 255, 55)";
+    }else{
+        bars[0].style.backgroundColor = "transparent";
+        bars[1].style.backgroundColor = "transparent";
+        bars[2].style.backgroundColor = "transparent";
+        bars[3].style.backgroundColor = "transparent";
     }
 }
 
