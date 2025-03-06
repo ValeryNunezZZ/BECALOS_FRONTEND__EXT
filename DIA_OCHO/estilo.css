@@ -1,0 +1,227 @@
+:root{
+    --bg-button: rgb(145, 107, 113);
+    --font-size-normal-text: 16px;
+    --padding--container: 30px;
+    --background--color--white: rgba(255, 255, 255, 0.441);
+}
+
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+
+    font-family: sans-serif;
+    
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    
+    background: linear-gradient(rgb(255, 159, 175),rgb(255, 176, 189),pink);
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+
+    padding-top: 80px;
+
+    width: 100%;
+
+}
+
+.main_container{
+
+    width: 500px;
+}
+
+.container_message{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 15px;
+
+    border: none;
+    margin-bottom: 40px;
+    
+    padding: var(--padding--container);
+    border-radius: 10px;
+
+    background-color: var(--background--color--white);
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.301);
+}
+
+.userName{
+    padding: 20px;
+
+    border-radius: 20px;
+
+    font-size: var(--font-size-normal-text);
+}
+
+textarea{
+    padding: 20px;
+
+    border-radius: 20px;
+
+    font-size: var(--font-size-normal-text);
+
+    width: 100%;
+    height: calc(var(--font-size-normal-text)*10);
+
+    resize: none;
+}
+
+
+input[type="button"]{
+
+    width: 100px;
+    padding: 10px 0px;
+
+    color: white;
+
+    cursor: pointer;
+
+    background: var(--bg-button);
+
+    border-radius: 20px;
+    transition: all 0.5s ease;
+}
+
+input[type="button"]:hover{
+    background: rgb(106, 78, 83);
+}
+
+
+
+/*FOTO DE PERFIL*/
+
+.img_perfil{
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 192, 203, 0.467);
+}
+
+.img_perfil img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+
+/*CAJA DE COMENTARIOS*/
+
+.mesagess_container{
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+
+    padding: 20px;
+
+    background-color: var(--background--color--white);
+
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.301);
+
+    margin-bottom: 50px;
+}
+
+.message_container{
+
+    width: 100%;
+
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+
+    padding: var(--padding--container);
+
+    background-color: white;
+}
+
+.container_data{
+
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.data{
+    width: 100%;
+
+    display: flex;
+    justify-content: left;
+    gap: 15px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.boton_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.message{
+    width: 100%;
+
+    color: rgb(22, 22, 22);
+    font-size: 15px;
+
+    line-height: 17px;
+    
+}
+
+.img_perfil{
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+}
+
+.nombre_usuario{
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.fecha_comentario{
+    font-weight: 200;
+    font-size: 17px;
+}
+
+/*
+P(A) >=0
+0<P(A) <1
+P(A) = 0 PROBABILIDAD NULA
+
+P(A) = 1 EVEENTO SEGURO
+*/
+
+
+.noHayComentarios{
+    color: rgb(38, 38, 38);
+}
